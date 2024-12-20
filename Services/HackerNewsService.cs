@@ -64,8 +64,9 @@ namespace CodingTest.Services
         {
             try
             {
+                var nBatch = 10;
                 var storyIds = await GetBestStoryIdsAsync();
-                var batches = storyIds.Take(n).Batch(10);
+                var batches = storyIds.Take(n).Batch(nBatch);
 
                 var topStories = new List<Story>();
 
