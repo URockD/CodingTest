@@ -15,7 +15,7 @@ This project is a RESTful API built with ASP.NET Core 3.1 to retrieve the top `n
 ---
 
 ## API Endpoints
-### **GET /api/stories/top/{n}**
+### **GET /api/stories?n=2**
 Retrieve the top `n` best stories from Hacker News.
 
 #### Request Parameters
@@ -23,7 +23,7 @@ Retrieve the top `n` best stories from Hacker News.
 
 #### Example Request
 ```http
-GET /api/stories?n=10
+GET /api/stories?n=2
 ```
 
 #### Example Response
@@ -110,9 +110,4 @@ GET /api/stories?n=10
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
-
----
-
-## Contact
-For questions or feedback, feel free to reach out via [your contact information here].
 
